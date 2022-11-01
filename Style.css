@@ -1,0 +1,59 @@
+body{
+    color:white;
+    background-color: rgb(56, 127, 189);
+    padding: 10px 50px;
+    background-image: url(images/image2.jpg); 
+     
+}
+.title{
+    font-size: 30px;
+}
+.formstyle input{
+    
+    padding: 5px 80px;
+    border: 1px solid rgb(197, 182, 182);
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+.form1{
+
+    font-size: 20px;
+    padding: 0px 400px;
+
+
+}
+.formerror{
+    color:red;
+}
+#nameinput,#passinput{
+    width: 100px;
+}
+.dropsize{
+    padding: 50px;
+}
+#sex{
+    width:auto;
+    padding: 0px;
+    margin: 1px;
+}
+textarea{
+    resize: none;
+    border: 1px solid rgb(136, 0, 255);
+    border-radius: 5px;
+}
+.button{
+    border-radius: 5px;
+    width: 80px;
+    height: 25px;
+    font-size: 20px;
+    margin: 22px 120px;
+}
+input[type="Submit"]{
+    padding: 12px 20px;
+    border: 1px solid rgb(0, 255, 132);
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+    margin: 15px 130px;
+}

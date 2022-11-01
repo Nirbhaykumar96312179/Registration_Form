@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_Form</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+   <div class="title"> 
+  <marquee scrollamount="10" bgcolor="navyblue" direction="right" height="50px" width="1000px" hspace="200px" vspace="100px" behavior="scroll"
+     loop="25" scrolldelay="300" size="100px" >Registration Form by Nirbhay Kumar
+    </marquee>
+   </div> 
+<div class="form1">
+    <form action="/" name="myForm" onsubmit="return validateForm()" method="post">
+        <table>
+            <tr>
+                <td>User id:</td>
+                <td>
+                    <div class="formstyle" id="userid">
+                        <input type="text" name="formuserid" id="nameinput" placeholder="Enter User Id" required><b><span class="formerror"></span></b>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+
+                    <div class="formstyle" id="password">
+                        <input type="password" name="formpassword" id="passinput" placeholder="Enter Password" required><b><span class="formerror"></span></b>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+            <td>Name:</td>
+            <td><div class="formstyle" id="fname">
+                <input type="text" name="fname" placeholder="Enter Your Name"required><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+       
+       
+        
+        <tr>
+            <td>Email: </td>
+            <td><div class="formstyle" id="email">
+                <input type="email" name="formemail" placeholder="Enter Email Id " required><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Address:</td>
+            <td><div class="formstyle" id="address">
+                <input type="text" name="formaddress" placeholder="Enter Your Address "> <b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Country:</td>
+            <td><div class="formstyle" id="country">
+                <label for="country"></label>
+                <select name="country" id="country">
+                    <option value="(Please choose a country)">(Please choose Your country)</option>
+                    <option value="India" class="dropsize">India</option>
+                    <option value="Afghanistan" class="dropsize">Afghanistan</option>
+                    <option value="Algeria" class="dropsize">Algeria</option>
+                    <option value="Argentina" class="dropsize">Argentina</option>
+                    <option value="Australia" class="dropsize">Australia</option>
+                    <option value="Bangladesh" class="dropsize">Bangladesh</option>
+                    <option value="Belgium" class="dropsize">Belgium</option>
+                    <option value="Brazil" class="dropsize">Brazil</option>
+                    <option value="Bulgaria" class="dropsize">Bulgaria</option>
+                    <option value="Canada" class="dropsize">Canada</option>
+                    <option value="China" class="dropsize">China</option>
+                    <option value="France" class="dropsize">France</option>
+                    <option value="Nepal" class="dropsize">Nepal</option>
+                    <option value="Japan" class="dropsize">Japan</option>
+                    <option value="Pakistan" class="dropsize">Pakistan</option>
+                    <option value="Sri lanka" class="dropsize">Srilanka</option>
+            
+                    <option value="Germany" class="dropsize">Germany</option>
+                    <option value="Zimbabwe" class="dropsize">Zimbabwe</option>
+                </select>
+                <b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Zip Code: </td>
+            <td><div class="formstyle" id="zipcode">
+                <input type="number" name="formzipcode" placeholder="Enter zipcode"required><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+       
+
+        <tr>
+            <td>Sex:</td>
+            <td><div class="formstyle" id="sex">
+            
+<label>Male<input type="radio" name="formsex" value="male"></label>
+<label>female <input type="radio" name="formsex" value="female"> </label>
+<label>other <input type="radio" name="formsex" value="other"> </label>
+                 <b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+
+        <tr>
+            <td>Language</td>
+            <td><label><div class="formstyle" id="language">
+                <input type="checkbox" name="formlanguage" id="english">English <input type="checkbox" name="formlanguage" id="non-english">Non-English<b><span class="formerror"></span></b>
+            </div></label></td>
+        </tr>
+
+        <tr>
+            <td>About: </td>
+            <td><div class="formstyle" id="about">
+                <textarea name="formabout" id="" cols="50" rows="5" placeholder="optional"></textarea><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+    </form>
+</div>
+    <script src="form.js"></script>
+</body>
+</html>
